@@ -8,6 +8,10 @@
 #define BITPACKING
 #include "common.h"
 
+#ifdef _MSC_VER
+#define __restrict__ __restrict
+#endif
+
 void __fastunpack0(const uint32_t *__restrict__ in, uint32_t *__restrict__ out);
 void __fastunpack1(const uint32_t *__restrict__ in, uint32_t *__restrict__ out);
 void __fastunpack2(const uint32_t *__restrict__ in, uint32_t *__restrict__ out);

@@ -51,8 +51,11 @@
 #include <intrin.h>
 
 #define __attribute__(n)
+
+#ifndef _WINDOWS
 #define __restrict__
 #define constexpr inline
+#endif
 
 #endif
 
